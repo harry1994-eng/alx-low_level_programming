@@ -6,17 +6,17 @@
  */
 void print_alphabet_x10(void)
 {
-	int n; ko;
+	int n; co;
 
-	ko = 0;
+	co = 0;
 
-	while (ko < 10)
+	while (co < 10)
 	{
 		for (n = 'a'; n <= 'z'; n++)
 		{
 			_putchar(n);
 		}
-		ko++;
+		co++;
 		_putchar('\n');
 	}
 }
