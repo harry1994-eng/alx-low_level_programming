@@ -3,18 +3,19 @@
 
 /**
  * print_square - a function that prints a square, followed by a new line
- * @size:size of both width and length
- * Return: return nothing
+ * @size:parameter
+ * Return: returns nothing
  */
+
 void print_square(int size)
 {
-	int co, ro;
+	int inc1, inc2;
 
        if (size > 0)
 	{
-		for (co = 0; co < size; co++)
+		for (inc1 = 0; inc1 < size; inc1++)
 		{
-			for (ro = 0; ro < (size - 1); ro++)
+			for (inc2 = 0; inc2 < (size - 1); inc2++)
 			{
 				putchar('#');
 			}
