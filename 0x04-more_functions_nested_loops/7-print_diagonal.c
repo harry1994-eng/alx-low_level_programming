@@ -5,24 +5,28 @@
  * @n:input number of times '\' should br printed
  * Return: a diagonal
  */
+
 void print_diagonal(int n)
 {
-	int co, sp;
+	int len, space;
 
 	if (n > 0)
-			{
-				putchar('\n');
-			}
-	else
 	{
-		for (co = 1; co <= n; co++)
+		for (len = 0; len < n; len++)
 		{
-		for (sp = 1; sp < co; sp++)
+			for (space = 0; space < len; space++)
 			{
 				putchar(' ');
 			}
+
 			putchar('\\');
+
+			if (len == (n - 1))
+			{
+				continue;
+			}
 			putchar('\n');
 		}
 	}
+	putchar('\n');
 }
