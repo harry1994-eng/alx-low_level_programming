@@ -1,8 +1,9 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
  * print_diagonal - a function that draws a diagonal line on a terminal 
- * @n:input number of times '\' should br printed
+ * @n:parameter
  * Return: a diagonal
  */
 
