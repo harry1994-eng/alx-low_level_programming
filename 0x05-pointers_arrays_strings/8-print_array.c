@@ -6,7 +6,6 @@
  * @n:number of element
  * Return:nothing
  */
-
 void print_array(int *a, int n)
 {
 	int inc;
