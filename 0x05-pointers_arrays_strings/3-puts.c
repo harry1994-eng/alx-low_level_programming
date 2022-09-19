@@ -1,13 +1,21 @@
+#include <stdio.h>
 #include "main.h"
 /**
- * _put -> this is a function that put a string
- * @: a parameter to put function
+ *_put - prints a string
+ *@str: string to print
+ *
+ * description: print a string
+ * on success:returns no error
  */
-void _put(char *str)
+
+void _puts(char *str)
 {
-	for (; *str != '\0'; str++)
+	int i = 0;
+
+	while (*(str + i) != '\0')
 	{
-		_putchar(*str);
+		putchar(*(str + i));
+		i++;
 	}
-	_putchar('\n');
+	putchar(10);
 }
