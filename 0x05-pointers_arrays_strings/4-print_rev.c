@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio>
+#include <stdio.h>
 #include <string.h>
 /**
  * print_rev -> printing a string in reverse 
