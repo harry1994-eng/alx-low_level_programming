@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_array - prints n element of array
+ * print_array - prints n digit of an array
  * @a: array
  * @n:number of values
  * Return:a and n inputs
