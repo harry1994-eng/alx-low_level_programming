@@ -22,5 +22,5 @@ int _atoi(char *s)
 	}
 	while (*s++);
 
-	return (num 8 sign);
+	return (num * sign);
 }
