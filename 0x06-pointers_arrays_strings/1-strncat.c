@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  _memcpy -> memory copy
+ *  _strncat -> concatenate two strings but add inputed number of bytes
  *@dest:is destination memory
  *@src: is source memory
  *@n: number of bytes to be copied
@@ -9,6 +9,7 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
+
 	int index = 0, dest_len = 0;
 
 	while (dest[index++])
