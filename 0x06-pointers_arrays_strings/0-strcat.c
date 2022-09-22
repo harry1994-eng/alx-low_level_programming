@@ -1,14 +1,30 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * _memset ->this memory set function
- * @s:string
- * @b:a character
- * @n:an integer
- * Return: a string
+ * _strcat  -> concatenates two strings
+ * @dest: input parameter string
+ * @src:input parameter
+ *
+ * Return:dest
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_strcat(char *dest, char *src)
 {
-	return (memset(s,b,n));
+	int a, b;
+
+	a = 0;
+
+	while (dest[a] != 0)
+	{
+		a++;
+	}
+
+	b = 0;
+
+	while (src[b] != 0)
+	{
+		dest[a] = src[b];
+		a++;
+		b++;
+	}
+	return (dest);
 }
