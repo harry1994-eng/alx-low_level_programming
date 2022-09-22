@@ -7,11 +7,15 @@
  *@n: number of bytes to be copied
  *Return: string copied from source
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	unsigned int a;
+	int index = 0, dest_len = 0;
 
-	for (a = 0; a < n; a++)
-		dest[a] = src[a];
+	while (dest[index++])
+		dest_len++;
+
+	for (index = 0; src[index] && index < n; index++)
+		dest[dest_len++] =  src[index];
+
 	return (dest);
 }
