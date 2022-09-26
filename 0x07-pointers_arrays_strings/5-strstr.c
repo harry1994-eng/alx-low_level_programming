@@ -21,11 +21,11 @@ char *_strstr(char *haystack, *needle)
 		}
 		if (needle[j])
 		{
-			i+=;
+			i++=;
 			j = 0;
 		}
 		else
-			return (haystack+ i);
+			return (haystack + i);
 	}
 	return (0);
 }
