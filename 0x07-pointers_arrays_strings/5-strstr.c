@@ -6,7 +6,7 @@
  *
  * Return:pointer to beginning of needle in haystack
  */
-char *_strstr(char *haystack, *needle)
+char *_strstr(char *haystack, char *needle)
 {
 	unsigned int i = 0, j = 0;
 
