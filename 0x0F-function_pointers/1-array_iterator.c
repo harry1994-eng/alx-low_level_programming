@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "function_pointer.h"
 /**
  * array_iterator - function that executes function given as psrs
  * @array:array of element
