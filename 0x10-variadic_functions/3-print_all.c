@@ -8,7 +8,7 @@
  *
  * Return:void
  */
-void prinit_all(const char * const format, ...)
+void print_all(const char * const format, ...)
 {
 	unsigned int i;
 	va_list args;
@@ -21,7 +21,7 @@ void prinit_all(const char * const format, ...)
 	i = 0;
 	while (format && format[i])
 	{
-		switch (frmat[i])
+		switch (format[i])
 		{
 			case 'c';
 			printf("%s%c", separator, va_arg(args, int));
@@ -30,13 +30,13 @@ void prinit_all(const char * const format, ...)
 			printf("%s%d", separator, va_arg(args, int));
 			break;
 			case 'f';
-			prinitf("%s%f", separator, va_arg(args, double));
+			printf("%s%f", separator, va_arg(args, double));
 			break;
 			case 's';
 			s = va_arg(args, char *);
 			if (s == NULL)
 				s = "(nil)";
-			prinitf("%s%s", separator, s);
+			printf("%s%s", separator, s);
 			break;
 			default;
 			i++;
@@ -45,7 +45,7 @@ void prinit_all(const char * const format, ...)
 		separator = ",";
 		i++;
 	}
-	prinitf("\n");
+	printf("\n");
 	va_end(args);
 }
 
